@@ -39,7 +39,7 @@ B07901019 電機四 吳隆暉
        return H
    ```
 
-   ![output1](/Users/LungHuiWu/Dropbox/Mac/Desktop/CV/hw3/src/output1.png)
+   ![output1](src/output1.png)
 
 2. Warping
 
@@ -153,13 +153,13 @@ B07901019 電機四 吳隆暉
 
    I use bilinear interpolation to avoid aliasing effect. The interpolation method is to do the weighted sum of the four bounding coordinates whose weight is proportional to the area across the corner.
 
-   ![bilinear](/Users/LungHuiWu/Dropbox/Mac/Downloads/bilinear.png)
+   ![bilinear](src/bilinear.png)
 
    ​																							**Bilinear Interpolation**
 
 3. Recovered QRcode
 
-   <img src="/Users/LungHuiWu/Dropbox/Mac/Desktop/CV/hw3/src/output3_1.png" alt="output3_1" style="zoom:50%;" /><img src="/Users/LungHuiWu/Dropbox/Mac/Desktop/CV/hw3/src/output3_2.png" alt="output3_2" style="zoom: 50%;" />
+   <img src="src/output3_1.png" alt="output3_1" style="zoom:50%;" /><img src="src/output3_2.png" alt="output3_2" style="zoom: 50%;" />
 
    
 
@@ -173,7 +173,7 @@ Since warping is a linear function, the result derived from the first soure is w
 
 4. Panorama
 
-![output4](/Users/LungHuiWu/Dropbox/Mac/Desktop/CV/hw3/src/output4.png)
+![output4](src/output4.png)
 
 With respect to whether all consecutive images can be stitched into a panorama ,my answer is it depends on the filming environment. If the objects and the backgrounds are all static, then the key points can match well. However, If the object to be stitched moves a lot during the filming process, then the homography matrix may suffer from a big error because of the faulty alignment of descriptors. And ends up with a poor connected panorama.
 
